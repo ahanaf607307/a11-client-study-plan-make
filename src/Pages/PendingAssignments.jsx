@@ -27,8 +27,8 @@ function PendingAssignments() {
   };
   return (
     <Fade>
-      <div className="w-full ">
-      <div className='mt-6 mb-14 h-[260px]  md:h-[400px] w-full bg-no-repeat bg-center  bg-cover bg-pendingBg bg-blend-darken rounded-2xl'>
+      <div className="w-full mt-16 ">
+      <div className='mt-6 mb-14 h-[260px]  md:h-[500px] w-full bg-no-repeat bg-center  bg-cover bg-pendingBg bg-blend-darken rounded-2xl'>
     <div className=' bg-black/50 w-full h-full flex flex-col justify-center items-center rounded-2xl'>
     <h1 className='text-3xl md:text-4xl lg:text-5xl text-center font-bold text-lime-400'>  PENDING ASSIGNMENT
     </h1>
@@ -36,14 +36,14 @@ function PendingAssignments() {
     </h1>
     </div>
      </div>
-     <div className="w-full my-14">
+     <div className="max-w-[1400px] mx-auto my-14">
 
 <h1 className="text-3xl my-10 text-orange-600 font-cardFont font-bold text-center">
    Total Pending -  {myAttempted?.length}
 </h1>
 {
   loadingSpinner ? <Loading/> : <section>
-  <div className="overflow-x-auto">
+  <div className="overflow-x-auto ">
     <table className="table">
       <thead>
         <tr>
@@ -61,7 +61,7 @@ function PendingAssignments() {
           <td>{attempt?.title ?? "N/A"}</td>
           <td>{attempt?.marks ?? "N/A"}</td>
           <td>{attempt?.submiterName ?? "N/A"}</td>
-          <td><Link to={`/giveMark/${attempt?._id}`} className="btn bg-orange-600 font-bold font-cardFont text-white/90">Give Mark</Link></td>
+          <td><Link to={`/giveMark/${attempt?._id}`} className="btn bg-[#5d65b7] font-bold font-cardFont text-white/90">Give Mark</Link></td>
         </tr>
       ))}
     </tbody>

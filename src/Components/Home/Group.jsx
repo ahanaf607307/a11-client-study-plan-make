@@ -4,7 +4,7 @@ import lottieFile from '../../assets/lottie.json'
 
 function Group() {
   return (
-    <div className='flex flex-col justify-center items-center font-cardFont'>
+    <div className='flex flex-col justify-center items-center font-cardFont max-w-[1400px] mx-auto'>
         <p className='text-center font-semibold text-md text-lime-600 my-3'>Not just a study stream room</p>
       <h1 className='text-center font-bold text-orange-600 text-3xl px-1 md:text-4xl lg:text-5xl md:w-9/12 mb-4'>Find your community. Set Goals.
       Achieve Them. Get rewarded.</h1>

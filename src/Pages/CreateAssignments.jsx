@@ -68,11 +68,11 @@ function CreateAssignments() {
 
  
   return (
-    <div className="px-1">
-      <h1 className="text-2xl md:text-4xl lg:text-5xl text-center text-orange-600 font-semibold md:my-8">
+    <div className="px-1 bg-loginBg bg-cover object-fill bg-center h-screen -my-12">
+      <h1 className="text-2xl md:text-4xl lg:text-5xl text-center text-white font-semibold md:my-8 pt-14">
         Create Your Assignment
       </h1>
-      <div className="md:w-[500px] lg:w-[800px] w-full  mx-auto border-2 shadow-xl p-5 my-10 rounded-xl bg-no-repeat bg-center  bg-cover bg-updatebg ">
+      <div className="md:w-[500px] lg:w-[800px] w-full  mx-auto border-2 shadow-xl p-5 my-10 rounded-xl backdrop-blur-3xl ">
         <form onSubmit={handleAssignmentSubmit}>
           <label className="form-control w-full  ">
             <div className="label">
@@ -82,7 +82,7 @@ function CreateAssignments() {
               type="text"
               name="title"
               placeholder="Title"
-              className="input input-bordered w-full  "
+              className="input input-bordered w-full   "
             />
           </label>
           <label className="form-control w-full  ">
@@ -93,7 +93,7 @@ function CreateAssignments() {
               type="text"
               name="description"
               placeholder="Description"
-              className="input input-bordered w-full  "
+              className="input input-bordered w-full   "
             />
           </label>
 
@@ -105,7 +105,7 @@ function CreateAssignments() {
               type="number"
               name="marks"
               placeholder="Mark's"
-              className="input input-bordered w-full  "
+              className="input input-bordered w-full   "
             />
           </label>
           <label className="form-control w-full  ">
@@ -116,14 +116,14 @@ function CreateAssignments() {
               type="url"
               name="imageUrl"
               placeholder="Thumbnail Image URL"
-              className="input input-bordered w-full  "
+              className="input input-bordered w-full   "
             />
           </label>
           <label className="form-control w-full  ">
             <div className="label">
               <span className="label-text">Assignment Difficulty Level</span>
             </div>
-            <select name="selectValue" className="border px-3 py-3 rounded-xl">
+            <select name="selectValue" className="border px-3 py-3 rounded-xl ">
               <option>Select One</option>
               <option value="Easy"> Easy </option>
               <option value="Medium"> Medium </option>
@@ -136,7 +136,7 @@ function CreateAssignments() {
           <span className="label-text">Date</span>
         </div>
         <DatePicker
-          className="border px-3 py-3 rounded-xl w-full cursor-pointer"
+          className="border px-3 py-3 rounded-xl w-full cursor-pointer "
           selected={startDate}
           onChange={(date) => setStartDate(date)}
         />

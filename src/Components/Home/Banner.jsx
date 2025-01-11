@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 function Banner() {
   return (
     <Fade fraction={0.5}>
-      <div className="bg-bannerBg bg-cover bg-center h-60 md:h-[510px] lg:h-[600px] w-full font-cardFont rounded-2xl">
+      <div className="bg-bannerBg bg-cover bg-center h-60 md:h-[510px] lg:h-[600px] w-full font-cardFont rounded-2xl mt-16">
         <div className=" flex flex-col justify-center items-center text-center h-full bg-black/60 rounded-2xl">
           <h1 className="font-bold h-14 md:h-20 lg:h-24 text-2xl md:text-4xl lg:text-5xl text-orange-500 md:w-7/12">
             <Typewriter

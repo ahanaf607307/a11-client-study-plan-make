@@ -1,10 +1,9 @@
-import { div } from 'motion/react-client'
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 
 function Faq() {
   return (
-    <div className='flex flex-col justify-center items-center w-full font-cardFont'>
+    <div className='flex flex-col justify-center items-center max-w-[1400px] mx-auto font-cardFont'>
       <Fade>
       <h1 className='text-3xl px-5 md:text-4xl lg:text-5xl font-bold text-orange-600 text-center'>Do You Have Any Question ? </h1>
       </Fade>

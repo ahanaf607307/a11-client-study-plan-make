@@ -78,7 +78,7 @@ function GiveMark() {
 
   return (
     <Fade fraction={0.5}>
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center bg-loginBg object-fill bg-cover bg-center h-screen -mt-5">
         <div className="w-full md:w-96 lg:w-[500px] border-2 shadow-lg my-16 p-5 rounded-2xl">
           <div>
          {
@@ -90,7 +90,7 @@ function GiveMark() {
         >
           Open to see Docs link
         </a>
-        <h1 className="text-xm font-semibold font-cardFont text-gray-500  text-wrap my-2">Note : {oldData?.quickNote}</h1>
+        <h1 className="text-xm font-semibold font-cardFont text-white  text-wrap my-2">Note : {oldData?.quickNote}</h1>
           </section>
          }
           </div>
@@ -122,7 +122,7 @@ function GiveMark() {
             <input
               type="submit"
               value="Submit "
-              className="btn bg-orange-600 text-white/90 font-bold font-cardFont w-full mt-5"
+              className="btn bg-[#5d65b7] text-white/90 font-bold font-cardFont w-full mt-5"
             />
           </form>
         </div>

@@ -1,21 +1,21 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
+import { FaUsers } from 'react-icons/fa'
+import { FaPeopleGroup } from 'react-icons/fa6'
+import { GiProgression } from 'react-icons/gi'
+import { GrDirections } from 'react-icons/gr'
+import { IoBookSharp } from 'react-icons/io5'
+import { MdOutlineLeaderboard } from 'react-icons/md'
 import fOne from '../../assets/f1.png'
 import fTwo from '../../assets/f2.png'
 import fThree from '../../assets/f3.png'
-import fFour from '../../assets/fFour.png'
 import fFive from '../../assets/fFive.png'
+import fFour from '../../assets/fFour.png'
 import fSix from '../../assets/fSix.png'
-import { IoBookSharp } from 'react-icons/io5'
-import { GrDirections } from 'react-icons/gr'
-import { GiProgression } from 'react-icons/gi'
-import { FaUsers } from 'react-icons/fa'
-import { MdOutlineLeaderboard } from 'react-icons/md'
-import { FaPeopleGroup } from 'react-icons/fa6'
-import { Fade } from 'react-awesome-reveal'
 
 function Feature() {
   return (
-    <section class=" flex flex-col justify-center items-center py-14 font-cardFont">
+    <section class=" max-w-[1400px] mx-auto flex flex-col justify-center items-center py-14 font-cardFont">
   
   <div class=" text-center">
 
@@ -58,7 +58,7 @@ function Feature() {
   <h1 className='text-3xl font-bold text-lime-400 '>Collaborative Grading</h1>
    <p className='text-md text-white/90 mt-2'>Assignments can be graded by friends, encouraging peer evaluation .
    </p>
-   <p className='text-md text-white/90 mt-2'>Feedback and grading reports are shared transparently.</p>
+   <p className='text-md text-white/90 mt-2'>Feedback and grading reports are shared transparently. Get Better Marks for hard effort</p>
   </div>
 </div>
     </Fade>
@@ -109,10 +109,10 @@ function Feature() {
   </figure>
   <div className="card-body">
     <h1 className='text-7xl text-orange-500  my-2 text-center'><MdOutlineLeaderboard /></h1>
-  <h1 className='text-3xl font-bold text-lime-400 '>Leaderboards & Rewards</h1>
+  <h1 className='text-3xl font-bold text-lime-400 '>Leaderboards </h1>
    <p className='text-md text-white/90 mt-2'>Encourage healthy competition with leaderboards for top performers.
    </p>
-   <p className='text-md text-white/90 mt-2'>Unlock badges and rewards for milestones like consistent grading or timely submissions.</p>
+   <p className='text-md text-white/90 mt-2'>Unlock badges and rewards for milestones like consistent grading ..</p>
   </div>
     {/* <!-- Feature 6 --> */}
 </div>

@@ -1,8 +1,10 @@
 import React from 'react'
+import About from './About'
 import Banner from './Banner'
-import Feature from './Feature'
 import Faq from './Faq'
+import Feature from './Feature'
 import Group from './Group'
+import Review from './Review'
 
 function Home() {
 
@@ -13,8 +15,14 @@ function Home() {
    <Feature/>
    </div>
       <Faq/>
+      <div>
+        <About/>
+      </div>
     <div className='my-14'>
     <Group/>
+    </div>
+    <div className='my-20'>
+      <Review/>
     </div>
     </div>
   )

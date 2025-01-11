@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import { FaUserTimes } from "react-icons/fa";
+import { FaBookOpen, FaUserTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
-import logoImage from '../../assets/logo.png';
 
 function Navbar() {
   const { user, logOutUser } = useContext(AuthContext);
@@ -17,10 +16,10 @@ function Navbar() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div className="navbar bg-base-100 h-20 ">
+    <div className="navbar bg-[#5d65b7] font-semibold text-white h-20 fixed top-0 z-50 py-10 px-3 md:px-10">
       <div className="navbar-start">
-        <Link className=" w-24 ">
-          <img className="h-7" src={logoImage} alt="logo" />
+        <Link className="  ">
+          <h1 className="font-bold text-3xl text-orange-500 flex items-center gap-x-2"><FaBookOpen /> GO</h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -94,7 +93,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-[#5d65b7]  rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
               {user ? (
@@ -150,7 +149,7 @@ function Navbar() {
           <ul
             tabIndex={0}
             id="navbar"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow absolute right-0"
+            className="menu menu-sm dropdown-content bg-[#5d65b7] rounded-box z-[1] mt-3 w-32 p-2 shadow absolute right-0"
           >
             <li>
               <NavLink to="/">Home </NavLink>
