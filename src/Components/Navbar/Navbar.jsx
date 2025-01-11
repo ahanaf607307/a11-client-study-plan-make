@@ -16,7 +16,7 @@ function Navbar() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div className="navbar bg-[#5d65b7] font-semibold text-white h-20 fixed top-0 z-50 py-10 px-3 md:px-10">
+    <div className="navbar bg-[#5d65b7] font-semibold text-white h-20 fixed top-0 z-50 py-10 px-3 md:px-12">
       <div className="navbar-start">
         <Link className="  ">
           <h1 className="font-bold text-3xl text-orange-500 flex items-center gap-x-2"><FaBookOpen /> GO</h1>
